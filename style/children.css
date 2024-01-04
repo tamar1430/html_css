@@ -1,0 +1,189 @@
+html {
+
+    scroll-padding-top: 9rem;
+}
+
+body {
+    background-image: url(../image/backgroundall.png);
+    background-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(137, 98, 40);
+    background-color: rgba(137, 98, 40, 0.2);
+    margin: 0;
+}
+
+h1 {
+    padding-top: 15vh;
+    font-size: 7vh;
+}
+
+iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+#logotop {
+    display: none;
+}
+
+#children {
+    margin: 4vw;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 5;
+    grid-template-rows: 5;
+    grid-template-areas:
+        "a a a b b"
+        "a a a g g"
+        "c c . . d"
+        "c c e e d"
+        "c c . . d";
+}
+
+#story {
+    padding: 2vw;
+    background-color: rgba(137, 98, 40, 0.2);
+    grid-area: a;
+    text-align: justify;
+    border: 5px solid rgb(122, 216, 146);
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 200%;
+}
+
+#draw {
+    grid-area: b;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+    border: 5px solid rgb(112, 180, 239);
+}
+
+#questions {
+    grid-area: c;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+    text-align: right;
+    font-size: 1.3vw;
+    border: 5px solid rgb(228, 228, 112);
+}
+
+#answers {
+    grid-area: d;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+    text-align: right;
+    font-size: 1.3vw;
+    border: 5px solid rgb(214, 145, 204);
+
+}
+
+#list {
+    opacity: 0;
+}
+
+#list:hover {
+    opacity: 1;
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+}
+
+#child {
+    text-align: right;
+    grid-area: e;
+    margin-right: 7vw;
+}
+
+#video {
+    grid-area: g;
+    margin-top: 4vh;
+}
+
+h3,
+h4,
+h2 {
+    text-align: center;
+}
+
+#image {
+    margin-right: 11vw;
+    width: 50%;
+}
+
+a {
+    font-size: 1rem;
+    float: left;
+    color: rgb(137, 98, 40);
+    font-weight: bold;
+}
+
+@media (max-width:400px) {
+    h1 {
+        text-align: center;
+        font-size: 6vh;
+        color: rgb(137, 98, 40);
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #children {
+        display: block;
+    }
+
+    footer>iframe {
+        height: 55vh;
+    }
+
+    #child {
+        display: none;
+    }
+
+    #logotop {
+        display: block;
+        width: 30%;
+        margin: 0px;
+        margin-right: 35%;
+    }
+
+    #story,
+    #draw,
+    #questions,
+    #answers {
+        font-size: 1.2rem;
+        padding: 4vh;
+        padding-bottom: 6vh;
+        margin-bottom: 2vh;
+
+    }
+
+    #list {
+        opacity: 1;
+        font-size: 4vw;
+
+    }
+
+    a {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    h3,
+    h2 {
+        font-size: 5vw;
+    }
+
+    h5 {
+        display: none;
+    }
+}

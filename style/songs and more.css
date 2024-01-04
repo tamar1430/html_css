@@ -1,0 +1,217 @@
+html {
+    scroll-padding-top: 9rem;
+}
+
+body {
+    background-image: url(../image/backgroundall.png);
+    background-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(137, 98, 40, 0.2);
+    color: rgb(137, 98, 40);
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+h1 {
+    padding-top: 15vh;
+    font-size: 7vh;
+}
+
+#logotop {
+    display: none;
+}
+
+h5 {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+a {
+    font-size: 2vw;
+}
+
+i {
+    color: rgb(137, 98, 40);
+}
+
+#grid-songs {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 3;
+    grid-template-rows: 10;
+    grid-template-areas:
+        "a j e"
+        "a b e"
+        "a b d"
+        "c b d"
+        "c b d"
+        "f g d"
+        "f g k"
+        "f i i"
+        "f i i"
+        "f i i";
+    padding: 30px;
+}
+
+#koEchsuf {
+    padding: 2vw;
+    grid-area: a;
+    background-color: rgba(137, 98, 40, 0.2);
+}
+
+#baruchKelElyon {
+    grid-area: b;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+}
+
+#yedidNefesh {
+    grid-area: c;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+}
+
+#kolMekadesh {
+    grid-area: d;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+}
+
+#menuchVsimcha {
+    grid-area: e;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+}
+
+#maYedidut {
+    grid-area: f;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+}
+
+#mizmorLedavid {
+    grid-area: g;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+}
+
+#sabbatvideo {
+    grid-area: i;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 2vw;
+
+}
+
+#picture1 {
+    grid-area: j;
+    padding: 10px;
+    background-color: rgba(137, 98, 40, 0.2);
+
+}
+
+#picture2 {
+    grid-area: k;
+    background-color: rgba(137, 98, 40, 0.2);
+    padding: 10px;
+
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+footer>iframe {
+    height: 22rem;
+}
+
+#to_top {
+    margin-top: 80vh;
+    margin-right: 43vw;
+    position: fixed;
+    z-index: 4;
+    font-size: 4rem;
+
+}
+
+
+@media (max-width:400px) {
+    header {
+        width: 100%;
+        position: fixed;
+        margin-right: 0px;
+    }
+    iframe {
+        width: 100%;
+        z-index: 100;
+    }
+
+    #logotop {
+        display: block;
+        width: 30%;
+        margin: 0px;
+        margin-right: 35%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 6vh;
+        color: rgb(137, 98, 40);
+    }
+
+    #grid-songs {
+        display: block;
+    }
+
+    #koEchsuf,
+    #baruchKelElyon,
+    #yedidNefesh,
+    #kolMekadesh,
+    #menuchVsimcha,
+    #maYedidut,
+    #mizmorLedavid,
+    #picture1,
+    #picture2 {
+        margin-bottom: 2vh;
+    }
+
+    #sabbatvideo {
+        display: none;
+    }
+    
+    h5,
+    i {
+        font-size: 20px;
+
+    }
+
+    #to_top {
+        margin-top: 36rem;
+        margin-right: 10rem;
+        position: fixed;
+        z-index: 4;
+        font-size: 2rem;
+    }
+    
+    footer>iframe {
+        height: 55vh;
+    }
+
+}

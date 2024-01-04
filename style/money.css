@@ -1,0 +1,15 @@
+body{
+    background-image: url(../image/backgroundall.png);
+    background-size: 100%;
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 30vh;
+    background-color: rgb(222, 219, 215);
+    color: rgb(137, 98, 40);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    font-size: 2vw;
+    color: rgb(137, 98, 40);
+
+}

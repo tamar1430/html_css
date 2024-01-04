@@ -1,0 +1,88 @@
+
+body{
+    background-color: rgb(135, 103, 55);
+    margin: 0;
+    padding: 0;
+    padding: 1vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+input{
+    background-color: rgb(222, 219, 215);
+    border: 1px solid rgb(222, 219, 215) ; 
+    padding: 0.15rem; 
+}
+#allinput{
+    margin: 22vw;
+    margin-top: 2vw;
+    margin-bottom: 0.2vw;
+    justify-content: space-around;
+    display:grid;
+    grid-template-rows: 4;
+    grid-template-columns:4;
+    grid-template-areas:
+     "a b c c"
+     ". d d ."
+     "e f g h"
+     ". i i ."
+     ;
+}
+#name{
+    grid-area: a;
+}
+#mail{
+    grid-area: b;
+}
+#times{
+    grid-area: c;
+}
+#chioes{
+    grid-area: d;
+}
+#times2{
+    grid-area: e;
+}
+#vort{
+    grid-area: f;
+}
+#halach{
+    grid-area: g;
+}
+#children{
+    grid-area: h;
+
+}
+#yesorno{
+    grid-area: i;
+
+}
+#send{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 30%;
+    font-weight: bold;
+}
+#send:hover{
+    color: rgb(222, 219, 215);
+    background-color: rgb(150, 120, 75);
+}
+@media(max-width:400px){
+    #allinput{
+        display:block;
+        padding:0.1rem;
+        padding-top:0.1rem;
+
+    }
+ 
+    #times{
+        margin: 0.5vh;
+    }
+    #chioes,#times2,#vort,#children,#halach{
+        display:none;
+
+    }
+}
+
+

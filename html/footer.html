@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="../style/all.min.css">
+     <link rel="stylesheet" href="../style/footer.css">
+    </head>
+    <body dir="rtl">
+        <div id="speekwithus">
+            <h4>מעוניין לקבל תכנים שבועיים למייל?</h4>
+            <form action="../html/mail.html" target="_top">
+                <div id="allinput">
+                    <div id="name">
+                <label for="name">שם:</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="20" placeholder="שם">
+            </div>
+            <div id="mail">
+                <label for="email">אימייל:</label>
+                <input type="text" id="email" name="email" required minlength="12" maxlength="30" placeholder="אימייל">
+            </div>
+            <div id="times">
+                <label for="city">זמן הדלקת נרות לפי אופק:</label>
+                <input type="text" list="cities" id="city" name="city" placeholder="בחר מהרשימה">
+                <datalist id="cities">
+                    <option value="ירושלים"></option>
+                    <option value="תל אביב "></option>
+                    <option value="חיפה"></option>
+                    <option value="באר שבע"></option>
+                </datalist>
+            </div>
+            <div id="chioes"><h5>אלו תכנים תרצה לקבל?</h5></div>
+            <div id="times2">
+                <input type="checkbox" id="times" name="conten">
+                <label for="times">זמני כניסת השבת</label>
+            </div>
+            <div id="vort">
+                 <input type="checkbox" id="vort" name="conten">
+                <label for="vort">ווארט לפרשת השבוע</label>
+            </div>
+            <div id="halach">
+                <input type="checkbox" id="halach" name="conten">
+                <label for="halach">הלכה שבועית</label>
+            </div>
+            <div id="children">
+                <input type="checkbox" id="child" name="conten">
+                <label for="child">תכנים לילדים</label>
+            </div>
+            <div id="yesorno">
+                <h5>האם האתר שלנו סייע לך?</h5>
+                <input type="radio" id="yes" name="answer" value="yes">
+                <label for="yes">כן, בטח</label>
+                <input type="radio" id="no" name="answer" value="no">
+                <label for="no">לא ממש....</label><br><br>
+                <input id="send" type="submit" value="שליחה" height="20px">
+            </div>
+            </div>
+            </form>
+        </div>
+</body>
+</html>
